@@ -63,6 +63,34 @@ let dat = document.querySelector("#today-plus-two");
 let afterTomorrow = weekDays[now.getDay() + 2];
 dat.innerHTML = `${afterTomorrow}`;
 
+//DayPlus3
+let daat = document.querySelector("#today-plus-three"); 
+function dayPlusThree () {
+  if (afterTomorrow ===  "Monday") {
+    let afterAfterTomorrow = "Tuesday";
+  } else,
+  if (afterTomorrow ===  "Tuesday") {
+ let afterAfterTomorrow = "Wednesday";
+}
+else,
+  if (afterTomorrow ===  "Wednesday") {
+ let afterAfterTomorrow = "Thursday";
+} else,
+  if (afterTomorrow ===  "Thursday") {
+ let afterAfterTomorrow = "Friday";
+} else,
+  if (afterTomorrow ===  "Friday") {
+ let afterAfterTomorrow = "Saturday";
+} else,
+  if (afterTomorrow ===  "Saturday") {
+ let afterAfterTomorrow = "Sunday";
+} else,
+  if (afterTomorrow ===  "Sunday") {
+ let afterAfterTomorrow = "Monday";
+}} 
+dayPlusThree ();
+daat.innerHTML = `${afterAfterTomorrow}`;
+
 // Weather Info Current Location - BONUS POINT
 
 let button = document.querySelector("button");
