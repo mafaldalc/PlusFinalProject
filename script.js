@@ -49,6 +49,14 @@ function show(event) {
   }
 }
 
+let todayBig = document.querySelector("#big-place");
+let location = document.querySelector("#search-text-input");
+if (location.value) {
+  todayBig.innerHTML = `${location.value}`;
+} else {
+  showLocation.innerHTML = null;
+}
+
 //Today
 let today = document.querySelector("#week-day");
 today.innerHTML = `${weekDay}`;
